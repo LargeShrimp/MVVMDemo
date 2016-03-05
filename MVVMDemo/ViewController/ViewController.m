@@ -10,7 +10,7 @@
 #import "TTXMHomeCell.h"
 #import "HomeViewModelClass.h"
 #import "DDHomeModel.h"
-#import <UIImageView+WebCache.h>
+
 
 static NSString *const CELLIDENTIFY = @"cell";
 
@@ -50,22 +50,16 @@ static NSString *const CELLIDENTIFY = @"cell";
     return _arr.count;
 }
 
-
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-   
     TTXMHomeCell *cell = [tableView dequeueReusableCellWithIdentifier:CELLIDENTIFY];
     DDHomeModel *model = _arr[indexPath.row];
-    cell.goodNameLabel.text = model.name;
-    cell.goodDateLabel.text = model.date;
-    cell.goodFormatelabel.text  =model.formate;
-    [cell.goodImageView sd_setImageWithURL:[NSURL URLWithString:model.image]];
+    [cell configCellWithModel:model];
     return cell;
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 @end

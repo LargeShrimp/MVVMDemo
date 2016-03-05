@@ -46,7 +46,6 @@
         [publicModelArray addObject:publicModel];
         
     }
-    
     self.returnBlock(publicModelArray);
 
 }

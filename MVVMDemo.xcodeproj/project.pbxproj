@@ -97,10 +97,10 @@
 		84DAA7BF1C89630100D7CB4A = {
 			isa = PBXGroup;
 			children = (
-				84DAA7CA1C89630100D7CB4A /* MVVMDemo */,
-				84DAA7C91C89630100D7CB4A /* Products */,
-				057A0958830347AF68BBA0BA /* Pods */,
 				8EDE46DF8EBAD3F69E5DF309 /* Frameworks */,
+				84DAA7CA1C89630100D7CB4A /* MVVMDemo */,
+				057A0958830347AF68BBA0BA /* Pods */,
+				84DAA7C91C89630100D7CB4A /* Products */,
 			);
 			sourceTree = "<group>";
 		};
