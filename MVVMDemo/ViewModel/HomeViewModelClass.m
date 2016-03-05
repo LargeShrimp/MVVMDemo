@@ -24,7 +24,6 @@
         
         self.failureBlock();
     }];
-    
 }
 
 
@@ -34,19 +33,24 @@
     NSMutableArray *publicModelArray = [[NSMutableArray alloc] initWithCapacity:statuses.count];
     
     for (int i = 0; i < statuses.count; i ++) {
+        
         DDHomeModel *publicModel = [[DDHomeModel alloc] init];
-        
         NSDictionary *model = statuses[i];
-        publicModel.name = model[@"name"];
-        NSArray *imagepath = model[@"imagePath"];
-        publicModel.image = imagepath.firstObject;
-        publicModel.date = model[@"produceDate"] != [NSNull null] ? model[@"produceDate"] : @"暂无" ;
+        publicModel.name    = model[@"name"];
+        NSArray *imagepath  = model[@"imagePath"];
+        publicModel.image   = imagepath.firstObject;
         publicModel.formate = model[@"specification"] ? : nil;
-        
+        publicModel.date = model[@"produceDate"] != [NSNull null] ? model[@"produceDate"] : @"暂无" ;
         [publicModelArray addObject:publicModel];
-        
     }
     self.returnBlock(publicModelArray);
+}
 
+- (void)push2DetailWithModel:(DDHomeModel *)model WithViewController:(UIViewController *)ctl {
+    
+    UIViewController *newController = [[UIViewController alloc]init];
+    newController.view.backgroundColor = [UIColor redColor];    
+    [ctl.navigationController pushViewController:newController animated:YES];
+    
 }
 @end

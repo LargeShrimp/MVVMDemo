@@ -14,6 +14,7 @@
 		8458766A1C89892000F64190 /* NetRequestClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 845876691C89892000F64190 /* NetRequestClass.m */; };
 		8458766E1C898CCC00F64190 /* TTXMHomeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8458766D1C898CCC00F64190 /* TTXMHomeCell.m */; };
 		845876711C899D1300F64190 /* DDHomeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 845876701C899D1300F64190 /* DDHomeModel.m */; };
+		845876741C8A7DC500F64190 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 845876731C8A7DC500F64190 /* DetailViewController.m */; };
 		84DAA7CD1C89630100D7CB4A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DAA7CC1C89630100D7CB4A /* main.m */; };
 		84DAA7D01C89630100D7CB4A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DAA7CF1C89630100D7CB4A /* AppDelegate.m */; };
 		84DAA7D31C89630100D7CB4A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DAA7D21C89630100D7CB4A /* ViewController.m */; };
@@ -41,6 +42,8 @@
 		8458766D1C898CCC00F64190 /* TTXMHomeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTXMHomeCell.m; sourceTree = "<group>"; };
 		8458766F1C899D1300F64190 /* DDHomeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDHomeModel.h; sourceTree = "<group>"; };
 		845876701C899D1300F64190 /* DDHomeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDHomeModel.m; sourceTree = "<group>"; };
+		845876721C8A7DC500F64190 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		845876731C8A7DC500F64190 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		84DAA7C81C89630100D7CB4A /* MVVMDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVMDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84DAA7CC1C89630100D7CB4A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		84DAA7CE1C89630100D7CB4A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -197,6 +200,8 @@
 			children = (
 				84DAA7D11C89630100D7CB4A /* ViewController.h */,
 				84DAA7D21C89630100D7CB4A /* ViewController.m */,
+				845876721C8A7DC500F64190 /* DetailViewController.h */,
+				845876731C8A7DC500F64190 /* DetailViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -347,6 +352,7 @@
 				845876591C89831000F64190 /* SVProgressHUD.m in Sources */,
 				8458766A1C89892000F64190 /* NetRequestClass.m in Sources */,
 				845876671C8983B900F64190 /* HomeViewModelClass.m in Sources */,
+				845876741C8A7DC500F64190 /* DetailViewController.m in Sources */,
 				84DAA7D01C89630100D7CB4A /* AppDelegate.m in Sources */,
 				845876711C899D1300F64190 /* DDHomeModel.m in Sources */,
 				84DAA7CD1C89630100D7CB4A /* main.m in Sources */,

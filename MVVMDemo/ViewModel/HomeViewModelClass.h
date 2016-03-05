@@ -7,9 +7,12 @@
 //
 
 #import "ViewModelClass.h"
+@class DDHomeModel;
 
 @interface HomeViewModelClass : ViewModelClass
 
 - (void)fetchHomeData;
+
+- (void)push2DetailWithModel:(DDHomeModel *)model WithViewController:(UIViewController *)ctl;
 
 @end

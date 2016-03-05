@@ -58,6 +58,12 @@ static NSString *const CELLIDENTIFY = @"cell";
     return cell;
 }
 
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    HomeViewModelClass *homeClass = [[HomeViewModelClass alloc]init];
+    [homeClass push2DetailWithModel:nil WithViewController:self];
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }
