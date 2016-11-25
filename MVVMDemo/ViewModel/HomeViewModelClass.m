@@ -12,9 +12,9 @@
 
 @implementation HomeViewModelClass
 
-- (void)fetchHomeData {
+- (void)fetchHomeData {ß
     
-    NSString *homeUrl = @"http://api.diandainfo.com/v1/promotional/recomand/goods?limit=20&offset=0";
+    NSString *homeUrl = @""ß;
     [NetRequestClass NetRequestGETWithRequestURL:homeUrl WithParameter:nil WithReturnValeuBlock:^(id returnValue) {
         
         [self dealDataWithDictiona:returnValue[@"data"]];
